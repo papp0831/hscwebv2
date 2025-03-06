@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Galéria - Hungarian Space Corporation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<!-- Logo -->
+					<a href="index.html" class="logo">
+						<span class="symbol"><img src="images/hsclogo.png" alt="HSC logó" /></span>
+						<span class="title">Hungarian Space Corporation</span>
+					</a>
+					<!-- Nav -->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menü</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menü</h2>
+				<ul>
+					<li><a href="index.html">Kezdőlap</a></li>
+					<li><a href="galleria.html">Galéria</a></li>
+					<li><a href="stream.html">Stream</a></li>
+					<li><a href="sc_q.a.html">Sc Q/A</a></li>
+					<li><a href="gyik.html">GYIK</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<h1>Galéria</h1>
+					<div class="gallery">
+						<!-- 15 kép -->
+						<div class="gallery-item"><img src="images/kep1.jpg" alt="Kép 1" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep2.jpg" alt="Kép 2" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep3.jpg" alt="Kép 3" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep4.png" alt="Kép 4" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep5.png" alt="Kép 5" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep6.png" alt="Kép 6" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep7.png" alt="Kép 7" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep8.png" alt="Kép 8" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep9.jpg" alt="Kép 9" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep10.jpg" alt="Kép 10" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep11.png" alt="Kép 11" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep12.png" alt="Kép 12" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep13.png" alt="Kép 13" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep14.jpg" alt="Kép 14" onclick="openLightbox(this.src)" /></div>
+						<div class="gallery-item"><img src="images/kep15.png" alt="Kép 15" onclick="openLightbox(this.src)" /></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Lightbox -->
+			<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+				<img id="lightbox-img" src="" alt="Nagyított kép" />
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Lightbox JS -->
+		<script>
+			function openLightbox(src) {
+				document.getElementById('lightbox-img').src = src;
+				document.getElementById('lightbox').style.display = 'flex';
+			}
+			function closeLightbox() {
+				document.getElementById('lightbox').style.display = 'none';
+			}
+		</script>
+	</body>
+</html>
